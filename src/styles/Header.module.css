@@ -1,0 +1,45 @@
+header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+header h1 {
+    padding: 0 0.25rem;
+    color: var(--orange);
+    font-weight: 400;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 3rem;
+    background-color: #6A9C89;  
+}
+
+header nav a {
+    display: flex;
+    font-size: 2rem;
+    align-items: baseline;
+    color: black;
+    background-color: #fff;
+    border-radius: 1rem;
+    margin: 0.25rem 0;
+    padding: 0.4rem;
+}
+
+header nav a:active {
+    color: black;
+}
+
+header nav a:hover {
+    background-color: var(--secondary) ;
+}
+
