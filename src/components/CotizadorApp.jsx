@@ -16,9 +16,11 @@ export const CotizadorApp = () => {
 
 
     useEffect(() => {
+        resetState();
         const leer = async () => setData(await (await fetch("/data.json")).json());
         leer();
-    }, []);
+      }, []);
+      
 
 
     const calculateQuote = () => {
@@ -36,6 +38,12 @@ export const CotizadorApp = () => {
         setEstimatedPrice(quote);
         successAlert()
     };
+
+    const resetState = () => {
+        setElementos({ property: 0, location: 0, squareMeters: 0 });
+        setEstimatedPrice(0.0);
+      };
+      
 
     return (
         <section>
